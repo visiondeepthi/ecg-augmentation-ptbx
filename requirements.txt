@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+wfdb
+tqdm
+# torch: install the build that matches your CUDA version, e.g.
+# pip install torch --index-url https://download.pytorch.org/whl/cu124
