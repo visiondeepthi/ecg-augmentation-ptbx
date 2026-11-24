@@ -1,3 +1,10 @@
+## Additional experiments (run after the steps above)
+python 14_shift_sweep.py ptbxl_out chapman_out 5 40         # shift mechanism and size sweep
+python 15_second_arch.py ptbxl_out chapman_out 5 40         # second architecture (CNN-GRU)
+python 16_external_extended.py ptbxl_out chapman_out        # extended label mapping (verified SNOMED codes)
+python 17_operating_points.py ptbxl_out                     # sensitivity/specificity operating points
+python 18_label_quality.py ptbxl_out chapman_out 5 40       # label-quality experiment
+python 19_exact_tests.py .                                  # exact per-seed tests (Welch, Mann-Whitney, Holm)
 # Data augmentation and external validation for 12-lead ECG classification (PTB-XL)
 
 Code for the manuscript: simple augmentation vs a fairly tuned baseline on PTB-XL (five diagnostic superclasses),
